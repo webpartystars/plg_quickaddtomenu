@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_SYSTEM_QUICKADDTOMENU</name>
+	<creationDate>27.05.2019</creationDate>
+	<author>Artem Vasilev</author>
+	<authorEmail>kern.usr@gmail.com</authorEmail>
+	<authorUrl>https://webmasterskaya.xyz</authorUrl>
+	<copyright>Copyright (c) 2009 - 2019. Artem Vasilev. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_QUICKADDTOMENU_XML_DESCRIPTION</description>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_quickaddtomenu.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_quickaddtomenu.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_quickaddtomenu.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_quickaddtomenu.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="quickaddtomenu">quickaddtomenu.php</filename>
+		<file>helper.php</file>
+		<folder>components</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<!-- Plugin media -->
+	<media folder="media" destination="plg_quickaddtomenu">
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="quickaddtomenu">https://вебмастерская.xyz/component/swjprojects/jupdate/1?project_id=1&amp;Itemid=101</server>
+	</updateservers>
+</extension>
